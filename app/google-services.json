@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "152484328427",
+    "firebase_url": "https://fb-test-e23fb.firebaseio.com",
+    "project_id": "fb-test-e23fb",
+    "storage_bucket": "fb-test-e23fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152484328427:android:51028a6a0c03d4815d1fae",
+        "android_client_info": {
+          "package_name": "ru.istislav.firstfirebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152484328427-imai3tp4ci5gsua2caukhmofe0n7n2sl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.istislav.firstfirebaseapp",
+            "certificate_hash": "45c82e4b81c7f260c3c1173b204355be0c36b8f6"
+          }
+        },
+        {
+          "client_id": "152484328427-gvfc5819i2cljut1ah6fsonpmevb34tk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzyUTR-m6gNvFZKyoP5XJ7gAzfZZQfsMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152484328427-gvfc5819i2cljut1ah6fsonpmevb34tk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
