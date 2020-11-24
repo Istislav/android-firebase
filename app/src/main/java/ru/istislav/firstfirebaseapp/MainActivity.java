@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
 
                 if (user != null) {
-                    Log.d(TAG, "user signed in");
+                    Log.d(TAG, "user signed in, email: " + user.getEmail());
                 } else {
                     Log.d(TAG, "user signed out");
                 }
