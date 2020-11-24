@@ -46,5 +46,29 @@
         app:layout_constraintTop_toBottomOf="@+id/passEd"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/createAccButton"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/createacc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutButton"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
