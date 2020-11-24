@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String value = snapshot.getValue(String.class);
-                Toast.makeText(MainActivity.this, value, Toast.LENGTH_SHORT).show();
+                Customer customer = snapshot.getValue(Customer.class);
+                Toast.makeText(MainActivity.this, customer.getFirstName(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String emailString = email.getText().toString();
+                final String emailString = email.getText().toString();
                 String pwd = password.getText().toString();
 
                 if (!emailString.equals("") && !pwd.equals("")) {
@@ -92,7 +92,9 @@ public class MainActivity extends AppCompatActivity {
                                 } else {
                                     Toast.makeText(MainActivity.this, "Signed in!", Toast.LENGTH_SHORT).show();
 
-                                    databaseReference.setValue("Now I can write to database!");
+                                    Customer customer = new Customer("Misha", "Popkin", emailString, 22);
+
+                                    databaseReference.setValue(customer);
                                 }
                             }
                         });
